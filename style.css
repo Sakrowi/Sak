@@ -1,0 +1,975 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Geologica:wght@300&family=Open+Sans&family=Roboto:wght@700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Angkor&family=Geologica:wght@300&family=Koulen&family=Open+Sans&family=Roboto:wght@700&display=swap'); */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    padding-top: 10px;
+}
+.header .box-header{
+    width: 75%;
+    height: 90%;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+}
+.ads{
+    width: 40%;
+    height: 70%;
+    background-color: green;
+    margin: auto;
+}
+.ads img{
+    width: 100%;
+    height: 100%;
+}
+.bar{
+    width: 100%;
+    height: 60px;
+    background-color: crimson;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+.bar .nav-bar{
+    width: 75%;
+    height: 100%;
+    /* background-color: gold; */
+    margin: auto;
+}
+.bar .nav-bar ul{
+    list-style-type: none;
+    display: flex;
+}
+.bar .nav-bar ul li{
+    padding: 15px 20px;
+    opacity: 0.7;
+}
+.bar .nav-bar ul li:hover{
+    opacity: 1;
+}
+.bar .nav-bar ul li a{
+    text-decoration: none;
+    font-family: "Roboto","Koulen";
+    font-size: 20px;
+    color: white;
+}
+.bar .nav-bar ul li a i{
+    color: white;
+}
+.maincontent{
+    width: 75%;
+    height: 510px;
+    /* background-color: red; */
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.maincontent .contentbox{
+    width: 74%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* box1  */
+.maincontent .contentbox .box-1{
+    width: 60%;
+    height: 50%;
+    background-color: blue;
+    position: relative;
+}
+.maincontent .contentbox .box-1 img{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+.maincontent .contentbox .box-1:hover .text{
+    top: 40%;
+    height: 125px;
+    transition: 0.5s;
+    /* background-color: orange; */
+}
+.maincontent .contentbox .box-1:hover h3{
+    color: orangered;
+}
+.boxoverlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+
+}
+.box-1 .date{
+    width: 100%;
+    /* height: 20px; */
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    font-family: "Battambang";
+    padding-left: 10px;
+    color: white;
+    z-index: 1;
+}
+.box-1 .text{
+    width: 100%;
+    height: 63px;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    font-family: "Koulen";
+    /* font-size: 15px; */
+    padding: 0 10px;
+    position: absolute;
+    top: 62%;
+    z-index: 1;
+    transition: 0.5s;
+    color: white;
+}
+.box-1 .text p{
+    font-size: 12px;
+    font-family: "Battambang";
+}
+.box-1 .label{
+    width: 100px;
+    height: 30px;
+    background-color: mediumblue;
+    font-family: "Koulen";
+    padding: 4px;
+    padding-left: 35px;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+}
+.box-1 .label p{
+    color: white;
+}
+.box-1 .coner{
+    /* border-top: 19px solid red; */
+    /* border-left: 20px solid black; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 30px solid mediumblue;
+    position: absolute;
+    top: 5%;
+    left: 15.75%;
+    z-index: 1;
+}
+/* box2  */
+.maincontent .contentbox .box-2{
+    width: 40%;
+    height: 50%;
+    background-color: aqua;
+    position: relative;
+}
+.maincontent .contentbox .box-2 img{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+.maincontent .contentbox .box-2:hover .text{
+    top: 40%;
+    height: 125px;
+    transition: 0.5s;
+    /* background-color: orange; */
+}
+.maincontent .contentbox .box-2:hover h3{
+    color: orangered;
+}
+.box-2 .boxoverlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+
+}
+.box-2 .date{
+    width: 100%;
+    /* height: 20px; */
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    font-family: "Battambang";
+    padding-left: 10px;
+    color: white;
+    z-index: 1;
+}
+.box-2 .text{
+    width: 100%;
+    height: 63px;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    font-family: "Koulen";
+    /* font-size: 15px; */
+    padding: 0 10px;
+    position: absolute;
+    top: 62%;
+    z-index: 1;
+    transition: 0.5s;
+    color: white;
+}
+.box-2 .text p{
+    font-size: 12px;
+    font-family: "Battambang";
+}
+.box-2 .label{
+    width: 100px;
+    height: 30px;
+    background-color: palevioletred;
+    font-family: "Koulen";
+    padding: 4px;
+    padding-left: 35px;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+}
+.box-2 .label p{
+    color: white;
+}
+.box-2 .coner{
+    /* border-top: 19px solid red; */
+    /* border-left: 20px solid black; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 30px solid palevioletred;
+    position: absolute;
+    top: 5%;
+    left: 23.75%;
+    z-index: 1;
+}
+/* box3 */
+.maincontent .contentbox .box-3{
+    width: 60%;
+    height: 50%;
+    background-color: blue;
+    position: relative;
+}
+.maincontent .contentbox .box-3 img{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+.maincontent .contentbox .box-3:hover .text{
+    top: 40%;
+    height: 125px;
+    transition: 0.5s;
+    /* background-color: orange; */
+}
+.maincontent .contentbox .box-3:hover h3{
+    color: orangered;
+}
+.box-3 .boxoverlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+
+}
+.box-3 .date{
+    width: 100%;
+    /* height: 20px; */
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    font-family: "Battambang";
+    padding-left: 10px;
+    color: white;
+    z-index: 1;
+}
+.box-3 .text{
+    width: 100%;
+    height: 63px;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    font-family: "Koulen";
+    /* font-size: 15px; */
+    padding: 0 10px;
+    position: absolute;
+    top: 62%;
+    z-index: 1;
+    transition: 0.5s;
+    color: white;
+}
+.box-3 .text p{
+    font-size: 12px;
+    font-family: "Battambang";
+}
+.box-3 .label{
+    width: 100px;
+    height: 30px;
+    background-color: green;
+    font-family: "Koulen";
+    padding: 4px;
+    padding-left: 35px;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+}
+.box-3 .label p{
+    color: white;
+}
+.box-3 .coner{
+    /* border-top: 19px solid red; */
+    /* border-left: 20px solid black; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 30px solid green;
+    position: absolute;
+    top: 5%;
+    left: 15.75%;
+    z-index: 1;
+}
+/* box4  */
+.maincontent .contentbox .box-4{
+    width: 40%;
+    height: 50%;
+    background-color: aqua;
+    position: relative;
+}
+.maincontent .contentbox .box-4 img{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+}
+.maincontent .contentbox .box-4:hover .text{
+    top: 40%;
+    height: 125px;
+    transition: 0.5s;
+    /* background-color: orange; */
+}
+.maincontent .contentbox .box-4:hover h3{
+    color: orangered;
+}
+.box-4 .boxoverlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+
+}
+.box-4 .date{
+    width: 100%;
+    /* height: 20px; */
+    /* background-color: red; */
+    position: absolute;
+    bottom: 0;
+    font-family: "Battambang";
+    padding-left: 10px;
+    color: white;
+    z-index: 1;
+}
+.box-4 .text{
+    width: 100%;
+    height: 63px;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+    font-family: "Koulen";
+    /* font-size: 15px; */
+    padding: 0 10px;
+    position: absolute;
+    top: 62%;
+    z-index: 1;
+    transition: 0.5s;
+    color: white;
+}
+.box-4 .text p{
+    font-size: 12px;
+    font-family: "Battambang";
+}
+.box-4 .label{
+    width: 100px;
+    height: 30px;
+    background-color: orange;
+    font-family: "Koulen";
+    padding: 4px;
+    padding-left: 5px;
+    position: absolute;
+    top: 5%;
+    z-index: 1;
+}
+.box-4 .label p{
+    color: white;
+}
+.box-4 .coner{
+    /* border-top: 19px solid red; */
+    /* border-left: 20px solid black; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 30px solid orange;
+    position: absolute;
+    top: 5%;
+    left: 23.75%;
+    z-index: 1;
+}
+/* ads  */
+.maincontent .ads{
+    width: 25%;
+    height: 100%;
+    background-color: aqua;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.ads1{
+    width: 100%;
+    height: 49%;
+    background-color: black;
+}
+.ads1 img{
+    width: 100%;
+    height: 100%;
+}
+.space{
+    width: 100%;
+    height: 2%;
+    background-color: white;
+}
+.ads2{
+    width: 100%;
+    height: 49%;
+    background-color: blue;
+}
+.ads2 img{
+    width: 100%;
+    height: 100%;
+}
+/* video  */
+.vdo{
+    width: 75%;
+    height: 60px;
+    /* background-color: black; */
+    margin: auto;
+    border-top: none;
+    border-bottom: 5px solid crimson;
+    /* position: relative; */
+}
+.vdo .vdobody{
+    width: 150px;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 40px solid crimson;
+    font-family: "Koulen";
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.vdo .vdobody .vdotxt{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    padding-top: 30px;
+}
+.vdotxt p{
+    color: white;
+}
+/* vdo content  */
+.vdocontent{
+    width: 75%;
+    height: 600px;
+    /* background-color: red; */
+    margin: 20px auto;
+    padding: 0 50px;
+    box-shadow: 1px 1px 1px grey;
+    /* border-color: gray; */
+    justify-content: space-between;
+}
+/* top  */
+.vdocontent .con1{
+    width: 100%;
+    height: 39%;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+/* vdo1  */
+.video{
+    width: 33%;
+    height: 100%;
+    /* background-color: green; */
+}
+.video .img{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+}
+.video .img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.video:hover img{
+    transform: scale(0.98);
+    transition: 0.5s;
+}
+.video .txt{
+    width: 100%;
+    height: 20%;
+    /* background-color: blue; */
+}
+.video .txt p{
+    font-family: "Battambang";
+    font-size: 15px;
+}
+.vdocontent .space{
+    width: 100%;
+    height: 2%;
+}
+/* bottom */
+.vdocontent .con2{
+    width: 100%;
+    height: 59%;
+    background-color: black;
+    display: flex;
+}
+.cont2{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* box */
+.cont2 .box{
+    width: 22%;
+    height: 48%;
+    /* background-color: black; */
+}
+.cont2 .box .img{
+    width: 100%;
+    height: 65%;
+    background-color: black;
+}
+.cont2 .box:hover img{
+    transform: scale(0.98);
+    transition: 0.5s;
+}
+.cont2 .box .img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.cont2 .box .txt{
+    width: 100%;
+    height: 35%;
+}
+.cont2 .box .txt p{
+    font-family: "Battambang";
+    font-size: 13px;
+    overflow: hidden;
+}
+/* ads  */
+.con2 .ads{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.con2 .ads .img{
+    width: 90%;
+    height: 90%;
+    /* background-color: green; */
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.con2 .ads .img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+/* video  */
+.ksn{
+    width: 75%;
+    height: 60px;
+    /* background-color: black; */
+    margin: auto;
+    border-top: none;
+    border-bottom: 5px solid hotpink;
+    /* position: relative; */
+}
+.ksn .komsan{
+    width: 150px;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 40px solid hotpink;
+    font-family: "Koulen";
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.ksn .komsan .ksntxt{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    padding-top: 30px;
+}
+.ksntxt p{
+    color: white;
+}
+.komsancontent{
+    width: 75%;
+    height: 350px;
+    /* background-color: red; */
+    margin: 20px auto;
+    padding: 0 50px;
+    box-shadow: 1px 1px 1px grey;
+    /* border-color: gray; */
+    display: flex;
+    justify-content: space-between;
+}
+.komsancontent .box1{
+    width: 30%;
+    height: 100%;
+    background-color: red;
+}
+.komsancontent .box1 .img{
+    width: 100%;
+    height: 55%;
+    background-color: black;
+}
+.komsancontent .box1:hover img{
+    transform: scale(0.98);
+    transition: 0.5s;
+}
+.komsancontent .box1 .img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.komsancontent .box1 .ksntx{
+    width: 100%;
+    height: 45%;
+    background-color: hotpink;
+    padding: 20px;
+}
+.komsancontent .box1 .ksntx h3{
+    font-size: 25px;
+    font-family: "battambang";
+    color: white;
+}
+.komsancontent .box2{
+    width: 65%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.komsancontent .box2 .smallbox{
+    width: 22%;
+    height: 48%;
+    /* background-color: black; */
+}
+.komsancontent .box2 .smallbox .img{
+    width: 100%;
+    height: 64%;
+    background-color: black;
+}
+.komsancontent .box2 .smallbox .img img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+.komsancontent .box2 .smallbox:hover img{
+    transform: scale(0.98);
+    transition: 0.5s;
+}
+.komsancontent .box2 .smallbox .txt{
+    width: 100%;
+    height: 36%;
+    /* background-color: red; */
+}
+.komsancontent .box2 .smallbox .txt p{
+    font-family: "Battambang";
+    font-size: 13px;
+    overflow: hidden;
+}
+/* Techno */
+.tcn{
+    width: 75%;
+    height: 60px;
+    /* background-color: black; */
+    margin: auto;
+    border-top: none;
+    border-bottom: 5px solid green;
+    /* position: relative; */
+}
+.tcn .techno{
+    width: 150px;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 40px solid green;
+    font-family: "Koulen";
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.tcn .techno .tcntxt{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    padding-top: 30px;
+}
+.tcntxt p{
+    color: white;
+}
+.komsancontent .box1 .tcntx{
+    width: 100%;
+    height: 45%;
+    background-color: green;
+    padding: 20px;
+}
+.komsancontent .box1 .tcntx h3{
+    font-size: 25px;
+    font-family: "battambang";
+    color: white;
+}
+/* jivit  */
+.jvt{
+    width: 75%;
+    height: 60px;
+    /* background-color: black; */
+    margin: auto;
+    border-top: none;
+    border-bottom: 5px solid goldenrod;
+    /* position: relative; */
+}
+.jvt .jivit{
+    width: 150px;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 40px solid goldenrod;
+    font-family: "Koulen";
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.jvt .jivit .jvttxt{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    padding-top: 30px;
+}
+.jvttxt p{
+    color: white;
+}
+.komsancontent .box1 .jvttx{
+    width: 100%;
+    height: 45%;
+    background-color: goldenrod;
+    padding: 20px;
+}
+.komsancontent .box1 .jvttx h3{
+    font-size: 25px;
+    font-family: "battambang";
+    color: white;
+}
+/* Sport */
+.spt{
+    width: 75%;
+    height: 60px;
+    /* background-color: black; */
+    margin: auto;
+    border-top: none;
+    border-bottom: 5px solid royalblue;
+    /* position: relative; */
+}
+.spt .sport{
+    width: 150px;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 40px solid royalblue;
+    font-family: "Koulen";
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.spt .sport .spttxt{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    padding-top: 30px;
+}
+.spttxt p{
+    color: white;
+}
+.komsancontent .box1 .spttx{
+    width: 100%;
+    height: 45%;
+    background-color: royalblue;
+    padding: 20px;
+}
+.komsancontent .box1 .spttx h3{
+    font-size: 25px;
+    font-family: "battambang";
+    color: white;
+}
+/* Deal  */
+.dls{
+    width: 75%;
+    height: 60px;
+    /* background-color: black; */
+    margin: auto;
+    border-top: none;
+    border-bottom: 5px solid grey;
+    /* position: relative; */
+}
+.dls .deals{
+    width: 150px;
+    height: 100%;
+    /* background-color: blue; */
+    border-right: 30px solid rgba(0, 0, 0, 0);
+    border-bottom: 40px solid grey;
+    font-family: "Koulen";
+    top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dls .deals .dlstxt{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    position: absolute;
+    padding-top: 30px;
+}
+.dlstxt p{
+    color: white;
+}
+.komsancontent .box1 .dlstx{
+    width: 100%;
+    height: 45%;
+    background-color: crimson;
+    padding: 20px;
+}
+.komsancontent .box1 .dlstx h3{
+    font-size: 25px;
+    font-family: "battambang";
+    color: white;
+}
+.bottom{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    margin: 50px auto;
+}
+.bottom .bottomcontent{
+    width: 75%;
+    height: 100%;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom .bottomcontent .content-box{
+    width: 33%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.bottom .bottomcontent .content-box img{
+    /* width: 40%;
+    height: 30%; */
+    margin-top: 30px;
+    padding: 10px;
+}
+.bottom .bottomcontent .content-box p{
+    font-family: "Battambang";
+    font-size: 16px;
+    color: grey;
+    padding-left: 10px;
+}
+.bottom .bottomcontent .content-box .address b{
+    color: white;
+}
+.bottom .bottomcontent .content-box h3{
+    font-family: "Koulen";
+    font-size: 23px;
+    color: grey;
+    padding-left: 10px;
+    margin: auto;
+    padding-top: 30px;
+}
+.bottom .bottomcontent .content-box .social{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    /* background-color: red; */
+    /* gap: 10px; */
+    /* position: relative; */
+}
+.bottom .bottomcontent .content-box .social img{
+    width: 45px;
+    height: 45px;
+    /* position: absolute; */
+    object-fit: cover;
+    margin-top: 0;
+}
+.bottom .bottomcontent .content-box ul{
+    width: 100%;
+    height: 20%;
+    /* background-color: red; */
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    /* justify-content: flex-start; */
+}
+/* .social{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+} */
+
+.bottom .bottomcontent .content-box ul li i{
+    /* width: 20%;
+    height: 100%; */
+    color: grey;
+    font-size: 25px;
+}
+.bottom .bottomcontent .content-box p:nth-child(4){
+    color: white;
+}
